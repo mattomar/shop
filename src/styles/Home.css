@@ -1,0 +1,97 @@
+html {
+    font-size: 16px; /* Base font size, can be adjusted as needed */
+    color: rgb(255, 255, 255);
+
+  }
+
+  .jumbotron-text {
+    font-size: 2rem;  /* Increase the size */
+    font-weight: 900;  /* Make it bold */
+}
+ 
+
+.jumbotron-description {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    color: gray;
+    max-width: 350px; /* Set a smaller max width for wrapping */
+    line-height: 1.5; /* Optional: improve readability */
+}
+
+
+
+.jumbotron-title {
+    font-size: 2.5rem;
+    font-family: "Qwitcher Grypen", cursive;
+
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem
+}
+
+.left-container {
+    flex: 1;
+    background-color: rgb(63, 60, 50);
+    border-radius: 40px;
+     padding-left: 3rem;
+     padding-right: 3rem;
+
+
+    
+}
+
+.right-container {
+    flex: 1.7;
+    padding-left: 2rem;
+    text-align: right;
+    /* Optional, to align content to the right */
+}
+
+.jumbotron-explore-more {
+    padding: 0.7rem 1.3rem;
+    background-color: #966328;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-bottom: 6rem;  
+    border-radius: 40px;
+
+}
+
+.jumbotron-explore-more:hover {
+    background-color: #52310d;
+}
+
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;      /* Make the image take up the full width of the slide */
+    height: 440px;    /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image is cropped to fit within the set dimensions */
+    border-radius: 40px;
+}

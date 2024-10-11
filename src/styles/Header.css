@@ -1,13 +1,14 @@
 html {
     font-size: 16px; /* Base font size, can be adjusted as needed */
+    color: rgb(227, 230, 233);
+
   }
   
   .header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f8f8;
-  }
+   }
   
   .navbar {
     display: flex;
@@ -39,13 +40,15 @@ html {
   
   .navbar li {
     cursor: pointer;
-    font-size: 1rem; /* Adjusted font size to use rem */
+    font-size: 0.9rem; /* Adjusted font size to use rem */
   }
   
   .title {
     flex: 1; /* Title takes up remaining space between navbar and cart */
     text-align: center;
     font-size: 2rem; /* Adjusted font size to use rem */
+    font-family: "Shadows Into Light", cursive;
+
   }
   
   .cart {

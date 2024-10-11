@@ -4,6 +4,7 @@ import Home from './Home';
 import Products from './Products';
 import Contacts from './Contacts';
 import React from 'react';
+import "./styles/App.css"
 
 function App() {
   return (
