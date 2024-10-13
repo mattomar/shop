@@ -95,3 +95,70 @@ html {
     object-fit: cover; /* Ensures the image is cropped to fit within the set dimensions */
     border-radius: 40px;
 }
+
+
+ .underjumb {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #404346;
+    border-radius: 20px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.icon-item p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+ }
+
+.about-left-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+     margin-bottom: 20px;
+      font-weight: 900;  /* Make it bold */
+      align-items: flex-start;
+}
+
+.about-description {
+    font-size: 0.9rem;
+ }
+
+.about-right-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.about-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}

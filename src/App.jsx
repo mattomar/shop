@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Products from './Products';
+import ProductDetails from './ProductDetails'; // Import the ProductDetails component
 import Contacts from './Contacts';
 import React from 'react';
-import "./styles/App.css"
+import "./styles/App.css";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetails />} /> {/* Dynamic route for product details */}
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </Router>
@@ -20,5 +22,3 @@ function App() {
 }
 
 export default App;
-
- 

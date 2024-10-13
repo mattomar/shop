@@ -1,7 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import products from './details/Details'; // Your array of products
 
-function Products() {
-    return <h2>Here are our Products</h2>;
-  }
-  
-  export default Products;
+const Products = () => {
+  return (
+    <div className="products-list">
+      {products.map((product) => (
+        <div key={product.id} className="product-card">
+          <Link to={`/products/${product.id}`}>
+            <img src={product.pic} alt={product.name} className="product-image" />
+            <h2>{product.name}</h2>
+            <p>Price: ${product.price}</p>
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Products;
