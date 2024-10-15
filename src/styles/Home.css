@@ -162,3 +162,38 @@ html {
     height: auto;
     border-radius: 8px;
 }
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .jumbotron {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center items */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .left-container, .right-container {
+        flex: none; /* Remove flex-grow */
+        width: 100%; /* Make them take full width */
+        padding: 1rem; /* Add padding */
+        margin-bottom: 1rem; /* Space between containers */
+    }
+
+    .about-right-container {
+        justify-content: flex-start;
+
+
+    }
+
+    .underjumb {
+        flex-direction: column; /* Stack icon items vertically */
+    }
+
+    .about-section {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center align */
+    }
+
+    .about-left-container, .about-right-container {
+        width: 100%; /* Full width for both sections */
+        padding: 0; /* Remove padding for simplicity */
+    }
+}

@@ -15,7 +15,7 @@ html {
     justify-content: flex-start;
     flex: 1; /* Ensure the navbar takes only as much space as its content */
   }
-  
+ 
   .navbar ul {
     list-style: none; /* Remove bullets */
     margin: 0; /* Remove margin */
@@ -55,6 +55,89 @@ html {
     display: flex;
     justify-content: flex-end;
     flex: 1; /* Ensure the cart takes only as much space as its content */
-    font-size: 1.125rem; /* Adjusted font size to use rem */
+    font-size: 2rem; /* Adjusted font size to use rem */
     cursor: pointer;
+  }
+
+  .cart {
+    position: relative; /* Position relative to enable absolute positioning for the quantity */
+  }
+  
+  .cart-quantity {
+    position: absolute; /* Position absolutely within the cart container */
+    top: -5px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    background-color: red; /* Background color for the quantity */
+    color: white; /* Text color */
+    border-radius: 50%; /* Make it circular */
+    padding: 4px 8px; /* Padding around the text */
+    font-size: 1rem; /* Font size */
+  }
+  
+ 
+
+ 
+  .sidebar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px; /* Sidebar width */
+    height: 100vh; /* Full height */
+    background-color: #33333328; /* Sidebar background color */
+    padding-top: 20px; /* Add padding on top */
+    z-index: 999; /* Ensure sidebar is above other elements */
+    backdrop-filter: blur(10px);
+  }
+  
+  .sidebar li {
+    width: 100%;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .sidebar a {
+    width: 100%;
+    display: block; /* Ensure anchor tag takes full width */
+  }
+  
+  .sidebar li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the inherited color */
+  }
+  
+  /* Prevent color change on visited links */
+  .sidebar li a:visited {
+    color: inherit; /* Keep the same color as non-visited links */
+  }
+
+ 
+
+  .menu-icon {
+    display: none; /* Hide menu icon by default */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* Hide navbar on smaller screens */
+    }
+  
+    .menu-icon {
+      display: block; /* Show menu icon on smaller screens */
+      font-size: 1rem; /* Adjust the size as needed */
+      margin-left: 1rem;
+    }
+  
+     
+  
+    .cart {
+      font-size: 1rem
+    }
+
+    .cart-quantity {
+      font-size: 0.3rem; /* Font size */
+
+    }
   }

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './styles/ProductDetails.css'; // Import the CSS file
+
 import products from './details/Details'; // Assuming 'Details.js' contains your product data
 
 const ProductDetails = () => {

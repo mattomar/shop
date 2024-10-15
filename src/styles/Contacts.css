@@ -1,0 +1,42 @@
+.contacts-container {
+    max-width: 600px; /* Maximum width for the contact container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ddd; /* Border around the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.contacts-title {
+    font-size: 2rem; /* Larger font size for the title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.contacts-description {
+    font-size: 1.1rem; /* Standard font size for descriptions */
+    color: #555; /* Slightly lighter color for descriptions */
+    margin-bottom: 15px; /* Space below descriptions */
+}
+
+.contacts-subtitle {
+    font-size: 1.5rem; /* Font size for subtitles */
+    color: #444; /* Color for subtitles */
+    margin-top: 20px; /* Space above subtitles */
+}
+
+.contacts-info {
+    font-size: 1.1rem; /* Font size for contact info */
+    color: #333; /* Dark color for contact info */
+    margin-bottom: 10px; /* Space below contact info */
+}
+
+.contacts-info a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contacts-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
